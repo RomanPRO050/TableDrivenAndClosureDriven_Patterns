@@ -28,5 +28,10 @@ func TestIsPalindrome(t *testing.T) {
 	})
 	t.Run("Guess What?", func(t *testing.T) {
 		IsPalindrome(111)
+
+	})
+	t.Run("Guess What?", func(t *testing.T) {
+		res := IsPalindrome(-121)
+		require.Exactly(t, false, res)
 	})
 }
